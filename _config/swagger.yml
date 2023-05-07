@@ -1,0 +1,9 @@
+---
+Name: swagger-devtool
+---
+Silverstripe\Swagger\SwaggerController:
+  swagger_json_path: '/swagger/client/swagger.json'
+SilverStripe\Dev\DevelopmentAdmin:
+  registered_controllers:
+    swagger:
+      controller: 'Silverstripe\Swagger\SwaggerController'

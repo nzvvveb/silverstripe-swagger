@@ -1,0 +1,21 @@
+{
+    "name": "silverstripe/swagger-ui",
+    "description": "view swagger API docs",
+    "type": "silverstripe-vendormodule",
+    "require": {
+        "silverstripe/vendor-plugin": "^1.0",
+        "silverstripe/framework": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Silvertripe\\Swagger\\": "src/"
+        }
+    },
+    "extra": {
+        "expose": [
+            "client/"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
