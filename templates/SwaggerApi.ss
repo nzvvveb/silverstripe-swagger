@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <title>Swagger UI</title>
-    <link rel="stylesheet" type="text/css" href="/resources/swagger/client/swagger-ui.css" />
-    <link rel="stylesheet" type="text/css" href="/resources/swagger/client//index.css" />
-    <link rel="icon" type="image/png" href="/resources/swagger/client/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="/resources/swagger/client//favicon-16x16.png" sizes="16x16" />
+    <% require css('silverstripe/swagger-ui:client/swagger-ui.css') %>
+    <% require css('silverstripe/swagger-ui:client/index.css') %>
+    <link rel="icon" type="image/png" href="$resourceURL(/swagger/client/favicon-32x32.png)" sizes="32x32" />
+    <link rel="icon" type="image/png" href="$resourceURL(/swagger/client/favicon-16x16.png)" sizes="16x16" />
   </head>
 
   <body>
     <div id="swagger-ui"></div>
-    <script src="/resources/swagger/client/swagger-ui-bundle.js" charset="UTF-8"> </script>
-    <script src="/resources/swagger/client/swagger-ui-standalone-preset.js" charset="UTF-8"> </script>
-    <script src="/resources/swagger/client/swagger-initializer.js" charset="UTF-8"> </script>
+    <% require javascript('silverstripe/swagger-ui:client/swagger-ui-bundle.js') %>
+    <% require javascript('silverstripe/swagger-ui:client/swagger-ui-standalone-preset.js') %>
+    <% require javascript('silverstripe/swagger-ui:client/swagger-initializer.js') %>
     <script>
         window.onload = function() {
   //<editor-fold desc="Changeable Configuration Block">
