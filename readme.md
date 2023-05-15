@@ -13,7 +13,7 @@ A Silverstripe module for serving Swagger API documentation.
 Install the module using Composer:
 
 ```
-composer require silverstripe/swagger
+composer require silverstripe/swagger-ui
 ```
 
 ## Usage
