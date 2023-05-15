@@ -2,7 +2,7 @@
 Name: swagger-devtool
 ---
 Silverstripe\Swagger\SwaggerController:
-  swagger_json_path: '/swagger/client/swagger.json'
+  swagger_json_path: 'silverstripe/swagger-ui: /client/swagger.json'
 SilverStripe\Dev\DevelopmentAdmin:
   registered_controllers:
     swagger:

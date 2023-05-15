@@ -9,6 +9,7 @@ namespace Silverstripe\Swagger;
 use SilverStripe\Control\Director;
 use SilverStripe\Control\Controller;
 use SilverStripe\Core\Config\Configurable;
+use SilverStripe\Core\Manifest\ModuleResourceLoader;
 
 class SwaggerController extends Controller {
     use Configurable;
@@ -38,7 +39,7 @@ class SwaggerController extends Controller {
         return Controller::join_links(
             Director::absoluteBaseURL(),
             RESOURCES_DIR,
-            $this->config()->get('swagger_json_path')
+            ModuleResourceLoader::singleton()->resolvePath($this->config()->get('swagger_json_path'))
         );
     }
 }
